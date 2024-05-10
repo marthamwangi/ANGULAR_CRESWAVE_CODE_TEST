@@ -5,6 +5,9 @@
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files
+![screencapture-localhost-4200-tasks-2024-05-10-16_49_00](https://github.com/marthamwangi/ANGULAR_CRESWAVE_CODE_TEST/assets/37874101/58b65484-2094-438f-a79b-99b1b4fe5a82)
+![screencapture-localhost-4200-tasks-2024-05-10-16_46_57](https://github.com/marthamwangi/ANGULAR_CRESWAVE_CODE_TEST/assets/37874101/bc21a11d-9510-492c-845d-15abd8e7fc61)
+
 
 # Tasks
 
