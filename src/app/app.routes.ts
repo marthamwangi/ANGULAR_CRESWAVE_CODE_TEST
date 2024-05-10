@@ -2,21 +2,21 @@ import { Route } from '@angular/router';
 
 const APP_ROUTES: Array<Route> = [
   {
-    path: 'all',
+    path: 'tasks',
     loadComponent: () =>
-      import('./list-tasks/list-tasks.component').then(
+      import('./pages/list-tasks/list-tasks.component').then(
         (c) => c.ListTasksComponent
       ),
   },
   {
-    path: 'view/:id',
+    path: 'tasks/:id',
     loadComponent: () =>
-      import('./task-view/task-view.component').then(
+      import('./pages/task-view/task-view.component').then(
         (c) => c.TaskViewComponent
       ),
   },
-  { path: '', pathMatch: 'full', redirectTo: 'all' },
-  { path: '**', pathMatch: 'full', redirectTo: 'all' },
+  { path: '', pathMatch: 'full', redirectTo: 'tasks' },
+  { path: '**', pathMatch: 'full', redirectTo: 'tasks' },
 ];
 
 export const fromRoutes = {
