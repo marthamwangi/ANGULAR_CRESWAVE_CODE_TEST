@@ -1,0 +1,24 @@
+<section *ngIf="task">
+    <a routerLink="/" [style.pointerEvents]="taskForm.invalid ? 'none' : 'auto'">
+        <img src="assets/icons/home.svg" alt="">
+    </a>
+    <mat-card>
+        <mat-card-content>
+            <div class="todo-heading">
+                <div class="title" *ngIf="titleRef">{{titleRef?.value}} </div>
+            </div>
+            <form [formGroup]="taskForm">
+                <input class="id-control" matInput formControlName="id">
+                <mat-checkbox formControlName="isComplete">Completed</mat-checkbox>
+                <mat-form-field>
+                    <mat-label>Title</mat-label>
+                    <input matInput formControlName="title" #titleRef>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Description</mat-label>
+                    <textarea matInput formControlName="description"></textarea>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</section>
